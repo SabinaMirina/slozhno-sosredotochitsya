@@ -1,4 +1,36 @@
-/*
-  Переменные для вашего проекта
-  и их переопределение под различные устройства
-*/
+:root {
+  /*bg-color*/
+  --bg-color: #000028;
+  --rose-bg: #FF0070;
+  /*bg-image*/
+  --bg-image: url(../images/cover-image-dark.png);
+  /*text-color*/
+  --text-color-light: #F1B2CE; 
+  --text-color: #FF0070;
+  --rose-bg-text-color: #000028;
+  --text-color-light: #F1B2CE;
+  --accent-color: #FF0070;
+  /*offset*/
+  --offset-mobile: clamp(0.625rem, 0.0271rem + 2.5510vw, 1.25rem);
+  --offset-desktop: 20px;
+  --offset-main-section-top-mobile: clamp(2.5rem, 1.3042rem + 5.1020vw, 3.75rem);
+  --offset-main-section-top-desktop: 60px;
+  --offset-main-section-bottom-mobile: clamp(2.5rem, 1.3042rem + 5.1020vw, 3.75rem);
+  --offset-main-section-bottom-desktop: 60px;
+  --offset-main-gallery-header-mobile: clamp(0.625rem, 0.0271rem + 2.5510vw, 1.25rem);
+  --offset-main-gallery-header-desktop: 20px;
+  --offset-footer-top-mobile: clamp(17.25rem, 6.6677rem + 45.1510vw, 28.312rem);
+  --offset-footer-top-tablet: 27.6875rem;
+  --offset-footer-bottom-mobile: clamp(17.187rem, 7.2017rem + 42.6041vw, 27.625rem);
+  --offset-footer-bottom-tablet: 27.625rem;
+  /*font*/
+  --main-font-family: 'IBM Plex mono';
+  --font-biggest-mobile: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  --font-biggest-desktop: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  --font-biggest-desktop-bigger: 157px;
+  --font-weight-smaller: 400;
+  --font-weight-bigger: 700;
+  --main-font: 1.125rem;
+
+
+}

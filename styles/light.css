@@ -4,9 +4,64 @@
   переключая тему
 */
 
+:root {
+
+}
+
 .page.theme_light {
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+  /*bg-color*/
+  --bg-color: #FFF1F7;
+  --rose-bg: #FF8DCB;
+  /*bg-image*/
+  --bg-image: url(../images/cover-image-light.png);
+  /*text-color*/
+  --text-color: #353430;
+  --rose-bg-text-color: #000028;
+  --text-color-light: #F1B2CE;
+}
+
+.page.theme_light .rec {
+  display: none;
+}
+
+.page.theme_light .decorated-zone::after {
+  border-top: 1px solid var(--text-color);
+  border-right: 1px solid var(--text-color);
+}
+
+.decorated-zone::before {
+  border-bottom: 1px solid var(--text-color);
+  border-left: 1px solid var(--text-color);
+}
+
+.page.theme_light .heading__header {
+  color: #FFC2E6;
+}
+
+.text__header {
+  color: var(--text-color);
+}
+
+.subheading__main_bold {
+  color: var(--text-color);
+}
+
+.subheading__bigger__main {
+  color: var(--text-color);
+}
+
+.page.theme_light .paragraph__main {
+  color: var(--text-color);
+}
+
+.page.theme_light .header__footer {
+  color: #FFC2E6;
+}
+
+.header__gallery {
+  color: var(--text-color);
 }
