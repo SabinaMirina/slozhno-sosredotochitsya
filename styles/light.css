@@ -1,18 +1,5 @@
-/*
-  Специально для светлой темы при наличии класса.
-  Здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
-
-:root {
-
-}
 
 .page.theme_light {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
   /*bg-color*/
   --bg-color: #FFF1F7;
   --rose-bg: #FF8DCB;
@@ -33,7 +20,7 @@
   border-right: 1px solid var(--text-color);
 }
 
-.decorated-zone::before {
+.page.theme_light .decorated-zone::before {
   border-bottom: 1px solid var(--text-color);
   border-left: 1px solid var(--text-color);
 }
@@ -42,19 +29,19 @@
   color: #FFC2E6;
 }
 
-.text__header {
+.page.theme_light .text__header {
   color: var(--text-color);
 }
 
-.subheading__main_bold {
+.page.theme_light .subheading__main_bold {
   color: var(--text-color);
 }
 
-.subheading__bigger__main {
+.page.theme_light .subheading__bigger__main {
   color: var(--text-color);
 }
 
-.page.theme_light .paragraph__main {
+.page.theme_light .page.theme_light .paragraph__main {
   color: var(--text-color);
 }
 
@@ -62,6 +49,98 @@
   color: #FFC2E6;
 }
 
-.header__gallery {
+.page.theme_light .header__gallery {
   color: var(--text-color);
 }
+
+.page.theme_light .header__theme-menu-button_active {
+  outline: 1px solid var(--text-color);
+}
+
+.page.theme_light .header__theme-menu-button:focus-visible {
+  --rose-bg: #FF0070;
+  border-bottom: 1px solid var(--text-color);
+}
+
+.page.theme_light .header__theme-menu-button:hover {
+  outline: 1px solid rgba(50, 49, 45, 0.40);
+}
+
+.page.theme_light .text-shadow:focus-visible {
+  outline: 1px solid var(--text-color);
+  outline-offset: -1px;
+}
+
+.page.theme_light .text-shadow:hover {
+  border-bottom: 1px solid var(--text-colo);
+}
+
+
+@media (prefers-color-scheme: light) {
+  .page {
+    /*bg-color*/
+    --bg-color: #FFF1F7;
+    --rose-bg: #FF8DCB;
+    /*bg-image*/
+    --bg-image: url(../images/cover-image-light.png);
+    /*text-color*/
+    --text-color: #353430;
+    --rose-bg-text-color: #000028;
+    --text-color-light: #F1B2CE;
+  }
+  
+  .decorated-zone::after {
+    border-top: 1px solid var(--text-color);
+    border-right: 1px solid var(--text-color);
+  }
+  
+  .decorated-zone::before {
+    border-bottom: 1px solid var(--text-color);
+    border-left: 1px solid var(--text-color);
+  }
+  
+  .heading__header {
+    color: #FFC2E6;
+  }
+  
+  .text__header {
+    color: var(--text-color);
+  }
+  
+  .subheading__main_bold {
+    color: var(--text-color);
+  }
+  
+  .subheading__bigger__main {
+    color: var(--text-color);
+  }
+  
+  .paragraph__main {
+    color: var(--text-color);
+  }
+  
+  .header__footer {
+    color: #FFC2E6;
+  }
+  
+  .header__gallery {
+    color: var(--text-color);
+  }
+
+ .header__theme-menu-button_active {
+    outline: 1px solid var(--text-color);
+  }
+  
+  .header__theme-menu-button:focus-visible {
+    border-bottom: 1px solid var(--text-color);
+  }
+  
+  .header__theme-menu-button:hover {
+    outline: 1px solid rgba(50, 49, 45, 0.40);
+  }
+
+  .rec {
+    display: none;
+  }
+}
+

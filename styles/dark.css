@@ -1,12 +1,210 @@
-/*
-  Специально для тёмной темы при наличии класса,
-  здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
 
 .page.theme_dark {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+  --bg-color: #000028;
+  --text-color: #FF0070;
+  --bg-image: url(../images/cover-image-dark.png);
+}
+
+.page.theme_dark .rec {
+  display: block;
+  grid-row-start: start;
+  text-transform: uppercase;
+  justify-self: end;
+  vertical-align: middle;
+  font-weight: var(--font-weight-smaller);
+  line-height: 138.889%;
+  font-style: normal;
+  text-align: center;
+  margin-right: 9px;
+}
+
+.page.theme_dark .rec::after {
+  content:"";
+  width: 9px;
+  height: 9px;
+  display: inline-block;
+  --rose-bg: #FF0070;
+  background-color: var(--rose-bg);
+  border-radius: 50%;
+  filter: drop-shadow(0px 0px 4px var(--rose-bg));
+  margin-left: 10px;
+  vertical-align: middle;
+  position: relative;
+}
+
+.page.theme_dark .decorated-zone::after {
+  --rose-bg: #FF0070;
+  border-top: 1px solid var(--rose-bg);
+  border-right: 1px solid var(--rose-bg);
+}
+
+.page.theme_dark .decorated-zone::before {
+  --rose-bg: #FF0070;
+  border-bottom: 1px solid var(--rose-bg);
+  border-left: 1px solid var(--rose-bg);
+}
+
+.page.theme_dark .heading__header {
+  color: #DB00FF;
+}
+
+.page.theme_dark .text__header {
+  --rose-bg: #FF0070;
+  --rose-bg-text-color: #000028;
+  color: var(--rose-bg-text-color);
+
+}
+
+.page.theme_dark .subheading__main_bold {
+  --rose-bg: #FF0070;
+  --rose-bg-text-color: #000028;
+  color: var(--rose-bg-text-color);
+
+}
+
+.page.theme_dark .subheading__bigger__main {
+  --rose-bg: #FF0070;
+  --rose-bg-text-color: #000028;
+  color: var(--rose-bg-text-color);
+}
+
+.page.theme_dark .subheading__main_not_bold {
+  --rose-bg: #FF0070;
+  --rose-bg-text-color: #000028;
+  color: var(--rose-bg-text-color);
+}
+
+.page.theme_dark .paragraph__main {
+  --text-color-light: #F1B2CE;
+  color: var(--text-color-light);
+}
+
+.page.theme_dark .header__footer {
+  color:  #DB00FF;
+}
+
+.page.theme_dark .header__gallery {
+  --rose-bg: #FF0070;
+  --rose-bg-text-color: #000028;
+  color: var(--rose-bg-text-color);
+}
+
+.page.theme_dark .header__theme-menu-button_active {
+  --rose-bg: #FF0070;
+  outline: 1px solid var(--rose-bg);
+}
+
+.page.theme_dark .header__theme-menu-button:focus-visible {
+  --rose-bg: #FF0070;
+  border-bottom: 1px solid var(--rose-bg);
+}
+
+.page.theme_dark .header__theme-menu-button:hover {
+  outline: 1px solid rgba(255, 0, 112, 0.40);
+}
+
+.page.theme_dark .text-shadow:focus-visible {
+  outline: 1px solid var(--text-color-light);
+  outline-offset: -1px;
+}
+
+.page.theme_dark .text-shadow:hover {
+  border-bottom: 1px solid var(--text-color-light);
+}
+
+/*-----prefers-color-scheme------*/
+@media (prefers-color-scheme: dark) {
+  .page {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    background-image: var(--bg-image);
+  }
+
+  .rec {
+    display: block;
+    grid-row-start: start;
+    text-transform: uppercase;
+    justify-self: end;
+    vertical-align: middle;
+    font-weight: var(--font-weight-smaller);
+    line-height: 138.889%;
+    font-style: normal;
+    text-align: center;
+    margin-right: 9px;
+  }
+  
+  .rec::after {
+    content:"";
+    width: 9px;
+    height: 9px;
+    display: inline-block;
+    --rose-bg: #FF0070;
+    background-color: var(--rose-bg);
+    border-radius: 50%;
+    filter: drop-shadow(0px 0px 4px var(--rose-bg));
+    margin-left: 10px;
+    vertical-align: middle;
+    position: relative;
+  }
+
+  .decorated-zone::after {
+    border-top: 1px solid var(--rose-bg);
+    border-right: 1px solid var(--rose-bg);
+  }
+  
+  .decorated-zone::before {
+    border-bottom: 1px solid var(--rose-bg);
+    border-left: 1px solid var(--rose-bg);
+  }
+  
+  .heading__header {
+    color: #DB00FF;
+  }
+  
+  .text__header {
+    color: var(--rose-bg-text-color);
+  }
+  
+  .subheading__main_bold {
+    color: var(--rose-bg-text-color);
+  }
+  
+  .subheading__bigger__main {
+    color: var(--rose-bg-text-color);
+  }
+  
+  .paragraph__main {
+    color: var(--text-color-light);
+  }
+  
+  .header__footer {
+    color:  #DB00FF;
+  }
+  
+  .header__gallery {
+    color: var(--rose-bg-text-color);
+  }
+
+  .header__theme-menu-button_active {
+    --rose-bg: #FF0070;
+    outline: 1px solid var(--rose-bg);
+  }
+  
+  .header__theme-menu-button:focus-visible {
+    --rose-bg: #FF0070;
+    border-bottom: 1px solid var(--rose-bg);
+  }
+  
+  .header__theme-menu-button:hover {
+    outline: 1px solid rgba(255, 0, 112, 0.40);
+  }
+
+  .text-shadow:focus-visible {
+    outline: 1px solid var(--text-color-light);
+    outline-offset: -1px;
+  }
+
+  .text-shadow:hover {
+    border-bottom: 1px solid var(--text-color-light);
+  }
 }
