@@ -97,7 +97,7 @@
     --accent-color: #FF8DCB;
   }
   
-  .heading__header { 
+  .heading__header {
     --header-color: #FFC2E6;
     color: var(--header-color);
     text-shadow: 4px 4px 0px var(--accent-color);
