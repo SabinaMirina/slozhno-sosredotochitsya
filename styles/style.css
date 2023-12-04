@@ -47,7 +47,7 @@ button:focus {
   justify-content: center;
   align-items: center;
   background-color: transparent;
-  font-family: inherit; 
+  font-family: inherit;
   color: inherit;
   text-transform: lowercase;
   border: none;
@@ -146,7 +146,7 @@ button:focus {
   background-color: var(--rose-bg);
   color: var(--rose-bg-text-color);
   font-style: normal;
-  font-weight: var(--font-weight-bigger); 
+  font-weight: var(--font-weight-bigger);
   line-height: 130%;
   justify-self: end;
 }
@@ -219,7 +219,7 @@ button:focus {
 .paragraph__main {
   color: var(--text-color-light);
   font-weight: var(--font-weight-smaller);
-  line-height:  130%;
+  line-height: 130%;
 }
 
 .text-shadow {
@@ -331,7 +331,7 @@ button:focus {
 .section__text-first {
   display: grid;
   grid-template-columns: [start] minmax(14.75rem, 1fr) [col2] minmax(29.5rem, 1fr) [col-end];
-  grid-template-rows: [start] auto [row2] auto [row-end]; 
+  grid-template-rows: [start] auto [row2] auto [row-end];
   gap: 20px;
 }
 
@@ -354,7 +354,7 @@ button:focus {
 .section__text-second {
   display: grid;
   grid-template-columns: [start] minmax(14.75rem, 1fr) [col2] minmax(29.5rem, 1fr) [col-end];
-  grid-template-rows: [start] auto [row2] auto [row3] auto [row4] auto [row-end]; 
+  grid-template-rows: [start] auto [row2] auto [row3] auto [row4] auto [row-end];
   gap: 20px;
 }
 
@@ -381,7 +381,7 @@ button:focus {
 .section__text-third {
   display: grid;
   grid-template-columns: [start] minmax(14.75rem, 1fr) [col2] minmax(29.5rem, 1fr) [col-end];
-  grid-template-rows: [start] auto [row-end]; 
+  grid-template-rows: [start] auto [row-end];
   gap: 20px;
 }
 
@@ -408,7 +408,7 @@ button:focus {
 
 .pictures__gallery {
   grid-template-columns: [start] minmax(14.312rem, 1fr) [col2] minmax(14.37rem, 1fr) [col3] minmax(14.312rem, 1fr) [col-end];
-  grid-template-rows: [start] 18.7500vh [row2] 22.4609vh [row3] 31.0547vh [row-end]; 
+  grid-template-rows: [start] 18.7500vh [row2] 22.4609vh [row3] 31.0547vh [row-end];
   gap: 20px;
 }
 
@@ -458,7 +458,6 @@ button:focus {
 
 /*-----------media-requests -2- -----------*/
 @media (min-width: 1024px) {
-/*--header--*/ 
 .header {
   max-width: 1440xp;
   padding: var(--offset-desktop) var(--offset-desktop) var(--offset-desktop) 0px;
@@ -522,7 +521,7 @@ button:focus {
 .section__text-first {
   display: grid;
   grid-template-columns: [start] minmax(19.685rem, 1fr) [col2] minmax(40.557rem, 2fr) [col-end];
-  grid-template-rows: [start] auto [row2] auto [row-end]; 
+  grid-template-rows: [start] auto [row2] auto [row-end];
   gap: 20px;
 }
 
@@ -545,7 +544,7 @@ button:focus {
 .section__text-second {
   display: grid;
   grid-template-columns: [start] minmax(19.687rem, 1fr) [col2] minmax(19.687rem, 1fr) [col3] minmax(19.687rem, 1fr) [col-end];
-  grid-template-rows: [start] auto [row2] auto [row-end]; 
+  grid-template-rows: [start] auto [row2] auto [row-end];
   gap: 20px;
 }
 
@@ -568,7 +567,7 @@ button:focus {
 .section__text-third {
   display: grid;
   grid-template-columns: [start] minmax(19.685rem, 1fr) [col2] minmax(40.557rem, 2fr) [col-end];
-  grid-template-rows: [start] auto [row-end]; 
+  grid-template-rows: [start] auto [row-end];
   gap: 20px;
 }
 
@@ -596,7 +595,7 @@ button:focus {
 
  .pictures__gallery {
   grid-template-columns: [start] minmax(19.687rem, 1fr) [col2] minmax(19.687rem, 1fr) [col3] minmax(19.687rem, 1fr) [col-end];
-  grid-template-rows: [start] 25.39vw [row2] 30.76vw [row3] 41.80vw [row-end]; 
+  grid-template-rows: [start] 25.39vw [row2] 30.76vw [row3] 41.80vw [row-end];
   gap: 20px;
 }
 
