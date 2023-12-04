@@ -1,4 +1,3 @@
-
 .page {
   color: var(--text-color);
   font-family: var(--main-font-family, monospace);
@@ -595,7 +594,7 @@ button:focus {
   margin-bottom: var(--offset-main-gallery-header-desktop);
 }
 
-.pictures__gallery {
+ .pictures__gallery {
   grid-template-columns: [start] minmax(19.687rem, 1fr) [col2] minmax(19.687rem, 1fr) [col3] minmax(19.687rem, 1fr) [col-end];
   grid-template-rows: [start] 25.39vw [row2] 30.76vw [row3] 41.80vw [row-end]; 
   gap: 20px;
